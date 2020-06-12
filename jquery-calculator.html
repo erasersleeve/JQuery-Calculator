@@ -97,7 +97,7 @@
         }
        });
        operators.on("click", function(event){
-       operator = event.target.textContent
+       operator = $(this).children("span").html();
        x = true
        $("#operator").html(operator);
         console.log(operator)
